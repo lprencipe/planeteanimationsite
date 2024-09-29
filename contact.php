@@ -89,7 +89,7 @@
                         if (isset($_POST['message'])) {
                         $entete  = 'MIME-Version: 1.0' . "\r\n";
                         $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-                        $entete .= 'From: planeteanimation.000webhostapp.com' . "\r\n";
+                        $entete .= 'From: https://lprencipe.github.io/planeteanimationsite/' . "\r\n";
                         $entete .= 'Reply-to: ' . $_POST['email'];
 
                         $message = '<p>Message envoyé depuis la page Contact de planeteanimation.com</p>
