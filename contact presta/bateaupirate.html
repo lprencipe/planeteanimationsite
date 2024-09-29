@@ -70,7 +70,7 @@
             <div class="row">
                <div class="col-lg-8 offset-lg-2">
                   <div class="full">
-                     <form action="https://formsubmit.co/prencipelouis@gmail.com" method="POST">
+                     <form id="contactForm" action="https://formsubmit.co/prencipelouis@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="Bâteau Pirate">
                         <input type="text" placeholder="Entrer votre prénom" name="name" required />
@@ -80,6 +80,18 @@
                         <input type="hidden" name="_next" value="https://lprencipe.github.io/planeteanimationsite/messageenvoye.html">
                         <input type="submit" value="Envoyer" />
                   </form>
+                  <script>
+                     // Écouteur d'événements pour le formulaire
+                     document.getElementById('contactForm').addEventListener('submit', function(e) {
+                         // Change le texte du bouton et désactive-le
+                         const submitButton = document.getElementById('submitButton');
+                         submitButton.textContent = 'Envoi en cours...';
+                         submitButton.classList.add('disabled'); // Ajoute une classe pour styliser le bouton
+                         submitButton.disabled = true; // Désactive le bouton
+             
+                         // Le formulaire est soumis normalement après ça
+                     });
+                 </script>
                   </div>
                </div>
             </div>
