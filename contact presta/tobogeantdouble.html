@@ -20,6 +20,21 @@
       <link href="../css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="../css/responsive.css" rel="stylesheet" />
+      <style>
+         /* Optionnel : style pour désactiver l'input pendant l'envoi */
+         .disabled {
+             opacity: 0.6;
+             cursor: not-allowed;
+         }
+ 
+         /* Style pour le message qui apparaît */
+         #delayMessage {
+             display: none;
+             color: rgb(0, 0, 0);
+             margin-top: 30px;
+             text-align: center;
+         }
+     </style>
    </head>
    <body class="sub_page">
       <div class="hero_area">
@@ -70,7 +85,7 @@
             <div class="row">
                <div class="col-lg-8 offset-lg-2">
                   <div class="full">
-                     <form action="https://formsubmit.co/prencipelouis@gmail.com" method="POST">
+                     <form id="contactForm" action="https://formsubmit.co/prencipelouis@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="Toboggan Géant Double">
                         <input type="text" placeholder="Entrer votre prénom" name="name" required />
@@ -78,8 +93,25 @@
                         <input type="tel" placeholder="Entrer votre téléphone" name="phone" required />
                         <textarea  name="message" placeholder="Entrer votre message..." required></textarea>
                         <input type="hidden" name="_next" value="https://lprencipe.github.io/planeteanimationsite/messageenvoye.html">
-                        <input type="submit" value="Envoyer" />
-                  </form>
+                        <input type="submit" id="submitButton" value="Envoyer">
+                        <p id="delayMessage">L'envoi peut prendre un certain temps, veuillez patienter.</p>
+                     </form>
+                     <script>
+                        // Écouteur d'événements pour le formulaire
+                        document.getElementById('contactForm').addEventListener('submit', function(e) {
+                            // Change le texte de l'input et désactive-le
+                            const submitButton = document.getElementById('submitButton');
+                            submitButton.value = 'Envoi en cours...';
+                            submitButton.classList.add('disabled');
+                            submitButton.disabled = true;
+                
+                            // Affiche un message après 5 secondes
+                            setTimeout(function() {
+                                const delayMessage = document.getElementById('delayMessage');
+                                delayMessage.style.display = 'block'; // Affiche le message
+                            }, 5000); // 5000 millisecondes = 5 secondes
+                        });
+                    </script>
                   </div>
                </div>
             </div>
