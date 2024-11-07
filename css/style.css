@@ -102,7 +102,6 @@ a:focus {
           box-shadow: none;
 }
 
-/*header section*/
 .hero_area {
   position: relative;
   min-height: 100vh;
@@ -244,8 +243,6 @@ a:focus {
   top: 0;
 }
 
-/*end header section*/
-/* slider section */
 .slider_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -788,7 +785,6 @@ a:focus {
   right: 25%;
 }
 
-/* footer section*/
 .footer_section {
   background-color: #002c3e;
   color: #ffffff;
@@ -919,7 +915,6 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
 
 .heading_container.heading_center h3 {
     position: relative;
@@ -972,7 +967,7 @@ li.nav-item ul li a:hover, li.nav-item ul li a:focus {
     font-weight: 800;
 }
 
-/** footer **/
+
 
 footer {
     background: #f8f8f8;
@@ -1098,7 +1093,6 @@ form input[type="submit"]:focus {
     color: #fff;
 }
 
-/** cpy **/
 
 .cpy_ {
     background: #222;
@@ -1122,11 +1116,6 @@ form input[type="submit"]:focus {
 
 
 
-
-
-
-/* Columns */
-
 .right-column {
   display: flex;
   width: 80%;
@@ -1140,9 +1129,7 @@ form input[type="submit"]:focus {
   position: relative;
   display: inline-block;
 }
-/* Right Column */
 
-/* Product Description */
 .product-description {
   border-bottom: 1px solid #E1E8EE;
   margin: 60px;
@@ -1167,7 +1154,6 @@ form input[type="submit"]:focus {
   line-height: 24px;
 }
 
-/* Product Price */
 .product-price {
   display: flex;
   align-items: center;
@@ -1196,7 +1182,6 @@ form input[type="submit"]:focus {
   background-color: #9b6262;
 }
 
-/* Responsive */
 @media (max-width: 767px) {
   .container {
     flex-direction: column;

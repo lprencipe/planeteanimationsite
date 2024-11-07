@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!-- Basic -->
        <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Mobile Metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <!-- Site Metas -->
-      <meta name="keywords" content="" />
-      <meta name="description" content="" />
-      <meta name="author" content="" />
+      <meta name="keywords" content="planete animation, location structure gonflable, location food truck, Dijon, Pontarlier, animation, anniversaire, churros, manéges enfant, Trampoline, pêche aux cannard, location" />
+      <meta name="description" content="À propos de Planete Animation..." />
+      <meta name="author" content="Louis Prencipe" />
       <link rel="shortcut icon" href="../images/structure.png" type="">
       <title>Planete Animation</title>
-      <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-      <!-- font awesome style -->
       <link href="../css/font-awesome.min.css" rel="stylesheet" />
-      <!-- Custom styles for this template -->
       <link href="../css/style.css" rel="stylesheet" />
-      <!-- responsive style -->
       <link href="../css/responsive.css" rel="stylesheet" />
       <style>
-         /* Optionnel : style pour désactiver l'input pendant l'envoi */
          .disabled {
              opacity: 0.6;
              cursor: not-allowed;
          }
  
-         /* Style pour le message qui apparaît */
          #delayMessage {
              display: none;
              color: rgb(0, 0, 0);
@@ -38,7 +29,6 @@
    </head>
    <body class="sub_page">
       <div class="hero_area">
-         <!-- header section strats -->
          <header class="header_section">
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -63,9 +53,7 @@
                </nav>
             </div>
          </header>
-         <!-- end header section -->
       </div>
-      <!-- inner page section -->
       <section class="inner_page_head">
          <div class="container_fuild">
             <div class="row">
@@ -77,8 +65,6 @@
             </div>
          </div>
       </section>
-      <!-- end inner page section -->
-      <!-- why section -->
       <section class="why_section layout_padding">
          <div class="container">
          
@@ -97,19 +83,16 @@
                         <p id="delayMessage">L'envoi peut prendre un certain temps, veuillez patienter.</p>
                      </form>
                      <script>
-                        // Écouteur d'événements pour le formulaire
                         document.getElementById('contactForm').addEventListener('submit', function(e) {
-                            // Change le texte de l'input et désactive-le
                             const submitButton = document.getElementById('submitButton');
                             submitButton.value = 'Envoi en cours...';
                             submitButton.classList.add('disabled');
                             submitButton.disabled = true;
                 
-                            // Affiche un message après 5 secondes
                             setTimeout(function() {
                                 const delayMessage = document.getElementById('delayMessage');
-                                delayMessage.style.display = 'block'; // Affiche le message
-                            }, 5000); // 5000 millisecondes = 5 secondes
+                                delayMessage.style.display = 'block';
+                            }, 5000);
                         });
                     </script>
                   </div>
@@ -117,8 +100,6 @@
             </div>
          </div>
       </section>
-      <!-- end why section -->
-      <!-- arrival section -->
       <section class="client_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
@@ -208,8 +189,6 @@
             </div>
          </div>
       </section>
-      <!-- end arrival section -->
-      <!-- footer section -->
 <footer>
          <div class="container">
             <div class="row">
@@ -266,7 +245,6 @@
             </div>
          </div>
       </footer>
-      <!-- footer section -->
       <script src="../js/jquery-3.4.1.min.js"></script>
       <script src="../js/popper.min.js"></script>
       <script src="../js/bootstrap.js"></script>
